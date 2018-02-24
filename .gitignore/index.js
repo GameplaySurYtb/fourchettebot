@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 bot.on("message", function (message){
-    if(message.content === "//help")
+    if_(message.content === "//help")
        message.reply("Ya pas de commandes")
 })
 bot.on("ready", function(){
