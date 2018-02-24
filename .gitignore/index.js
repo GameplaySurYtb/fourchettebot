@@ -6,7 +6,7 @@ bot.on("message", function (message){
        message.reply('Ya pas de  commandes')
 })
 bot.on("ready", function(){
-    bot.user.setGame("ElyBot, !help");
+    bot.user.setGame("ElyBot, //help");
     console.log("Le bot a bien ete conecté");
 });
 
