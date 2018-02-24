@@ -1,9 +1,12 @@
 const Discord = require("discord.js");
+const bot = new Discord.Client();
 
-var bot = new Discord.Client();
-
+bot.on('message', function (message){
+    if_(message.content === '!test')
+    message.reply('Sa marche !!!')
+})
 bot.on("ready", function(){
-    bot.user.setGame("ElyBot, //help");
+    bot.user.setGame("ElyBot, !help");
     console.log("Le bot a bien ete conecté");
 });
 
