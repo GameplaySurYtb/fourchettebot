@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 
-bot.on('message', function (message){
-    if_(message.content === '!test')
-       message.reply('Sa marche !!!')
+bot.on("message", function (message){
+    if(message.content === '//help')
+       message.reply('Ya pas de  commandes')
 })
 bot.on("ready", function(){
     bot.user.setGame("ElyBot, !help");
