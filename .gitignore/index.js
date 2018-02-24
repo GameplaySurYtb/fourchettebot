@@ -6,7 +6,7 @@ bot.on("message", function (message){
        message.channel.send("Ya pas de commandes")
 })
 bot.on("ready", function(){
-    bot.user.setGame("ElyBot, !help");
+    bot.user.setGame("ElyBot, //help");
     message.channel.send("ElyBot activé");
 });
 
