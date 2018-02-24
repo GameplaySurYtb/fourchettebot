@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('message', function (message){
     if_(message.content === '!test')
-    message.reply('Sa marche !!!')
+       message.reply('Sa marche !!!')
 })
 bot.on("ready", function(){
     bot.user.setGame("ElyBot, !help");
