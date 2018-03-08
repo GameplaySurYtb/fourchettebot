@@ -6,8 +6,7 @@ bot.on("ready", function() {
     bot.user.setUsername("ElyBot");
 });
 bot.on("message", message => {
-    let command = message.content.split(" ")[0];
-    const args = message.content.slice(prefix.length).split(/+/);
+    let command = message.content.split(" ");
     command = args.shift().toLowerCase();
     if(message.content === "!!help"){
         message.channel.sendMessage(message.member + " Les commandes t'ont étés envoyés en MP");
@@ -35,7 +34,7 @@ bot.on("message", message => {
     } else if(command === "!!resetgame"){
         bot.user.setGame("ElyBot, !!help")
         message.channel.sendMessage(message.member + " Tu viens de reset le Jeux du bot")
-    } else if(command === "kick"){
+    } else if(command === "!!kick"){
         let modRole = message.guild.roles.find("name", "[Fondateur]")
         if(!message.member.roles.has(modRole.id)){
             return message.reply("Tu t'es pris pour un admin ?").catch(console.error)
