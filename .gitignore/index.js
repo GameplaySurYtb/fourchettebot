@@ -39,4 +39,4 @@ bot.on("guildMemberAdd", member => {
         return channel.send("Bienvenue sur ELYTHIOM " + member.displayName + "\n \nSi tu veus la liste des commandes; va sur le discord de ElyThiom et fais !!help")
     })
 })
-bot.login("process.env.TOKEN");
+bot.login(process.env.TOKEN);
