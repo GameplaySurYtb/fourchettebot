@@ -6,8 +6,6 @@ bot.on("ready", function() {
     bot.user.setUsername("ElyBot");
 });
 bot.on("message", message => {
-    let command = message.content.split(" ");
-    command = args.shift().toLowerCase();
     if(message.content === "!!help"){
         message.channel.sendMessage(message.member + " Les commandes t'ont étés envoyés en MP");
         message.author.createDM().then(channel => {
