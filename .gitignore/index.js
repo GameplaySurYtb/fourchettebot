@@ -27,8 +27,8 @@ bot.on("message", message => {
             channel.send("╔════════════════════════════╗\n║                                   COUCOU                                      ║\n║                                                                                           ║\n║                                                                                           ║\n║                                                                                           ║\n║                                                                                           ║\n║                                                                                           ║\n║                                                                                           ║\n║                                                                                           ║\n╚════════════════════════════╝")
         });
     } else if(message.content.startsWith("!!setgame")){
-        bot.user.setGame(message.content.substr(9));
-        message.channel.sendMessage(message.member + " Tu viens de set le Jeu du bot pour " + message.content.substr(8))
+        bot.user.setGame(message.content.substr(9))
+        message.channel.sendMessage(message.member + " Tu viens de set le Jeu du bot")
     } else if(message.content === "!!resetgame"){
         bot.user.setGame("ElyBot, !!help")
         message.channel.sendMessage(message.member + " Tu viens de reset le Jeu du bot")
