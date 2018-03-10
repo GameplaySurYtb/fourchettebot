@@ -28,14 +28,10 @@ bot.on("message", message => {
         });
     } else if(message.content.startsWith("!!setgame")){
         bot.user.setGame(message.content.substr(9));
+        message.channel.sendMessage(message.member + " Tu viens de set le Jeu du bot pour " + message.content.substr(9))
     } else if(message.content === "!!resetgame"){
         bot.user.setGame("ElyBot, !!help")
-        message.channel.sendMessage(message.member + " Tu viens de reset le Jeux du bot")
-    } else if(message.content === "!tamere"){
-        message.channel.sendMessage("Va niquer ta mere ptit enculé")
-    } else if(message.content === "fdp ta mere la pute"){
-        message.reply("Je vais le dire a ma maman")
-        message.react(Emoji)
+        message.channel.sendMessage(message.member + " Tu viens de reset le Jeu du bot")
     }
 });
 bot.on("guildMemberAdd", member => {
