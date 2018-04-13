@@ -34,7 +34,7 @@ bot.on("message", message => {
     } else if(message.content === "!tamere"){
         message.channel.sendMessage("Va niquer ta mere ptit enculé")
     } else if(message.content === "fdp"){
-        message.reply("Je vais le dire a ma maman")
+        message.channel.sendMessage("Je vais le dire a ma maman")
     }
 });
 bot.on("guildMemberAdd", member => {
