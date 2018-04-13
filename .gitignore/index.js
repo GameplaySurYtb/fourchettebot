@@ -8,7 +8,7 @@ bot.on("message", message => {
     if(message.content === "!help"){
         message.channel.sendMessage(message.member + " Les commandes t'ont étés envoyés en MP");
         message.author.createDM().then(channel => {
-            channel.send("Commandes disponnibles sur ELYTHIOM :\n \n```Markdown\n!!help -> Avoir la liste des commandes\n```");
+            channel.send("Commandes disponnibles sur FourchetteArmy :\n \n```Markdown\n!!help -> Avoir la liste des commandes\n```");
         });
         console.log("Commande !!help effectuée par :\n" + message.author.displayName);
     } else if(message.content === "coucou"){
@@ -35,6 +35,7 @@ bot.on("message", message => {
         message.channel.sendMessage("Va niquer ta mere ptit enculé");
     } else if(message.content === "fdp"){
         message.channel.sendMessage("Je vais le dire a ma maman");
+        message.react(Emoji);
     }
 });
 bot.on("guildMemberAdd", member => {
