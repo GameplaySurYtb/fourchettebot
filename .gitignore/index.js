@@ -29,17 +29,17 @@ bot.on("message", message => {
     } else if(message.content.startsWith("!setgame")){
         bot.user.setGame(message.content.substr(9));
     } else if(message.content === "!resetgame"){
-        bot.user.setGame("fortnite (!help)")
-        message.channel.sendMessage(message.member + " Tu viens de reset le Jeux du bot")
+        bot.user.setGame("fortnite (!help)");
+        message.channel.sendMessage(message.member + " Tu viens de reset le Jeux du bot");
     } else if(message.content === "!tamere"){
-        message.channel.sendMessage("Va niquer ta mere ptit enculé")
+        message.channel.sendMessage("Va niquer ta mere ptit enculé");
     } else if(message.content === "fdp"){
-        message.channel.sendMessage("Je vais le dire a ma maman")
+        message.channel.sendMessage("Je vais le dire a ma maman");
     }
 });
 bot.on("guildMemberAdd", member => {
     member.createDM().then(channel => {
-        return channel.send("Bienvenue sur LE DSICORD DE GARRIS " + member.displayName + "\n \nSi tu veus la liste des commandes; va sur le discord de Garris et fais !help")
+        return channel.send("Bienvenue sur LE DSICORD DE GARRIS " + member.displayName + "\n \nSi tu veus la liste des commandes; va sur le discord de Garris et fais !help");
     })
 });
 bot.login(process.env.TOKEN);
