@@ -33,7 +33,7 @@ bot.on("message", message => {
         message.channel.sendMessage(message.member + " Tu viens de reset le Jeux du bot")
     } else if(message.content === "!tamere"){
         message.channel.sendMessage("Va niquer ta mere ptit enculé")
-    } else if(message.content === "fdp ta mere la pute"){
+    } else if(message.content === "fdp"){
         message.reply("Je vais le dire a ma maman")
         message.react(Emoji)
     }
