@@ -2,13 +2,13 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
-    bot.user.setGame("Fortnite (!help)");
+    bot.user.setGame("FiveM (!help)");
 });
 bot.on("message", message => {
     if(message.content === "!help"){
         message.channel.sendMessage(message.member + " Les commandes t'ont étés envoyés en MP");
         message.author.createDM().then(channel => {
-            channel.send("Commandes disponnibles sur FourchetteArmy :\n \n```Markdown\n!!help -> Avoir la liste des commandes\n```");
+            channel.send("Commandes disponnibles sur ElyThiom GtaV :\n \n```Markdown\n!!help -> Avoir la liste des commandes\n```");
         });
         console.log("Commande !!help effectuée par :\n" + message.author.displayName);
     } else if(message.content === "coucou"){
@@ -39,7 +39,7 @@ bot.on("message", message => {
 });
 bot.on("guildMemberAdd", member => {
     member.createDM().then(channel => {
-        return channel.send("Bienvenue sur LE DSICORD DE GARRIS " + member.displayName + "\n \nSi tu veus la liste des commandes; va sur le discord de Garris et fais !help");
+        return channel.send("Bienvenue sur LE DSICORD DE ElyThiom GTAV " + member.displayName + "\n \nSi tu veus la liste des commandes; va sur le discord de Garris et fais !help");
     })
 });
 bot.login(process.env.TOKEN);
